@@ -7,6 +7,7 @@ env:
 install:
 - npm --production=false install
 - npm --production=false update
+- cd node_modules/scratch-svg-renderer && npm install && npm run build && cd -
 sudo: false
 cache:
   directories:
