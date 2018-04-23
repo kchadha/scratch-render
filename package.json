@@ -23,6 +23,9 @@
     "version": "json -f package.json -I -e \"this.repository.sha = '$(git log -n1 --pretty=format:%H)'\"",
     "watch": "webpack --progress --colors --watch --watch-poll"
   },
+  "dependencies": {
+    "scratch-svg-renderer": "github:kchadha/scratch-svg-renderer#bitmap-importer"
+  },
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-eslint": "^8.2.1",
